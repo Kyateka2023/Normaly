@@ -1,0 +1,501 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(247, 250, 191);
+    font-family: 'Kaushan Script', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.entire-section
+{
+    height: 100%;
+    overflow: auto;
+}
+
+main, footer
+{
+    margin: 1.5rem 0;
+}
+
+.header-section
+{
+    padding: 1rem 0;
+    height: 100%;
+    border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+    background-color: rgba(1, 66, 1, 0.799);
+    color: whitesmoke;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header h3
+{
+    font-size: 1.3rem;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+nav a
+{
+    padding: 0.7rem;
+    margin: 0 2rem;
+    color: whitesmoke;
+    
+}
+
+nav a:hover
+{
+    border-bottom: 3px solid white;
+}
+
+nav a:active
+{
+    border-bottom: none;
+}
+
+.search-menu
+{
+    padding: 0.5rem;
+}
+
+.search-icon
+{
+    display: inline-block;
+    padding: 0.55rem;
+    border-radius: 100%;
+    margin: 0 0.5rem;
+    background-color: darkorange;
+    color: white;
+}
+
+.intro-image
+{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro h1
+{
+    font-size: 5rem;
+    width: 40rem;
+    margin-bottom: 1rem;
+}
+
+.intro p
+{
+    width: 20rem;
+    margin: 1.2rem 0;
+}
+
+.buttons
+{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.demo
+{
+    padding: 1rem;
+    color: white;
+    background-color: rgb(255, 119, 0);
+    border-radius: 30rem;
+    display: inline-block;
+    text-align: center;
+    width: 12rem;
+    margin-right: 1rem;
+}
+
+.play
+{
+    padding: 1rem;
+    color: white;
+    background-color: rgb(255, 119, 0);
+    border-radius: 100%;
+    display: inline-block;
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.fa-play
+{
+    margin-left: 0.2rem;
+}
+
+.watch
+{
+    color: white;
+}
+
+.image
+{
+    background-color: rgba(0, 0, 0, 0.653);
+    padding: 4.5rem;
+    border-radius: 10px;
+}
+
+main
+{
+    padding: 1rem;
+}
+
+.div1, .div2, .div3
+{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    height: 20rem;
+}
+
+.div2 h2
+{
+    font-size: 4rem;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.two
+{
+    margin: 2rem 0;
+}
+
+.row1, .row2, .row3
+{
+
+    width: 33.3%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*This is where the problem occurred*/
+}
+
+.part1, .part2, .part3
+{
+    
+    width: 33.3%;
+}
+
+main .one .row1 h2, main .one .row2 h2
+{
+    font-size: 5em;
+}
+
+main .one .row1 .icon-stars, main .one .row2 .icon-stars
+{
+    margin-bottom: 1rem;
+}
+
+main .row1 p, main .row2 p
+{
+    color: grey;
+}
+
+main .one .row1 .icon-stars span, main .one .row2 .icon-stars span
+{
+    color: gold;
+}
+
+.icon-part1, 
+.icon-part2, 
+.icon-part3
+{
+    border: 1px solid black;
+    padding: 1.2rem;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.084);
+    transition: transform 0.5s;
+}
+
+.icon-part1:hover, 
+.icon-part2:hover, 
+.icon-part3:hover
+{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+.icon-part1:active, 
+.icon-part2:active, 
+.icon-part3:active
+{
+    transform: scale(0.95);
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+.icon-part1 span, 
+.icon-part2 span, 
+.icon-part3 span
+{
+    padding: 2rem;
+    font-size: 2rem;
+    display: inline-block;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+    color: white;
+    background-color: rgb(255, 102, 0);
+}
+
+.icon-part1 h4, 
+.icon-part2 h4,
+.icon-part3 h4
+{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.icon-part1 p, 
+.icon-part2 p,
+.icon-part3 p
+{
+    width: 18rem;
+}
+
+.cert-intro
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert-intro h3
+{
+    font-size: 2.5rem;
+}
+
+.cert-intro p
+{
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.certificate-row1, .certificate-row2
+{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.course
+{
+    width: 30%;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.06);
+}
+
+.course .solid-icons
+{
+    padding: 1.2rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+    color: white;
+    background-color: rgb(255, 102, 0);
+}
+
+.course h3
+{
+    margin-bottom: 0.5rem;
+}
+
+.course p
+{
+    color: rgb(82, 82, 82);
+}
+
+.time-money
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.time-money p
+{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.time-money span
+{
+    color: rgb(82, 82, 82);
+}
+
+.links-subscription
+{
+    padding: 1rem;
+    max-width: max-content;
+    margin: auto;
+}
+
+.yearly
+{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10rem;
+    width: 15rem;
+    color: black;
+    font-weight: bold;
+    width: 7rem;
+    display: inline-block;
+    text-align: center;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.monthly
+{
+    padding: 1rem;
+    background-color: rgba(1, 66, 1, 0.799);
+    border-radius: 10rem;
+    width: 15rem;
+    color: white;
+    font-weight: bold;
+    width: 7rem;
+    display: inline-block;
+    text-align: center;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.pricing-table
+{
+    margin: 1rem 0;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.col1
+{
+    padding: 3rem 1.5rem;
+    text-align: center;
+    line-height: 2.0;
+    width: 20rem;
+    margin: 1rem 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.253);
+    transition: all 0.5s;
+}
+
+.col1:hover
+{
+    transform: scale(1.1);
+}
+
+.col1 h2
+{
+    font-size: 2.5rem;
+}
+
+.col1 a
+{
+    display: inline-block;
+    padding: 0.4rem;
+    width: 10rem;
+    border-radius: 2rem;
+    color: black;
+    background-color: rgb(234, 234, 234);
+    margin: 2rem 0;
+}
+
+.col1 a:hover
+{
+    color: white;
+     background-color: rgba(255, 72, 0, 0.9);
+      font-weight: bold;
+}
+
+footer
+{
+    padding: 1rem;
+}
+
+.outro-info
+{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.outro h3
+{
+    font-size: 2rem;
+}
+
+.outro p
+{
+    width: 20rem;
+    font-size: 1.1rem;
+    margin: 1.2rem 0;
+}
+
+
+#mail
+{
+    padding: 0.7rem;
+    width: 18rem;
+    outline: none;
+    border: none;
+}
+
+::placeholder
+{
+    opacity: 1;
+    color: black;
+}
+
+#button
+{
+    background-color: black;
+    border: none;
+    padding: 0.7rem;
+    color: white;
+}
+
+#button:hover
+{
+    background-color: rgba(0, 0, 0, 0.861);
+    cursor: pointer;
+}
+
+th,
+td
+{
+    padding: 1rem 2rem;
+    text-align: center;
+
+}
